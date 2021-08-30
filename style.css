@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(movie.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+.menu-bar{
+    background-color: white;
+    text-align: center;
+    height: 50px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    
+}
+.menu-bar ul li{
+    
+    width: 320px;
+    margin: 15px;
+}
+.menu-bar ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+.dull,.menu-bar ul li:hover{
+    background-color: rgb(231, 22, 74);
+
+}
+.menu-bar .fas{
+    margin-right: 10px;
+}
+.sub-menu
+{
+    display:none;
+    flex-direction: column;
+}
+.menu-bar a{
+     display:block;
+     flex-direction: column;
+}
+.menu-bar ul li:hover .sub-menu{
+    display:block;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
